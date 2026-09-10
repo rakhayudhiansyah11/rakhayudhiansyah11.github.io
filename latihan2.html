@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar CSS Grid Bento</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .grid-container {
+            padding: 10px;
+            height: 90vh;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            grid-template-areas:
+                "item1 item2 item3 item3"
+                "item4 item5 item5 item6"
+                "item4 item7 item7 item8";
+                
+                
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .item {
+            background-color: #091e36;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid black;
+        }
+
+        .item1 {
+            grid-area: item1;
+            background-color: #4A90E2;
+            background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+            background-size: cover;
+        }
+
+        .item2 {
+            grid-area: item2;
+            background-color: #50E3C2;
+            background-image: url('https://asset.tribunnews.com/9yaVbhBX33HHCR56bFD3ituv_CU=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/jogja/foto/bank/originals/macan-tutul-1_20150921_140320.jpg');
+            background-size: cover;
+        }
+
+        .item3 {
+            grid-area: item3;
+            background-color: #B8E986;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1i4Clg8kW6xSe3tesS_1KhCjNJiXXPx3XzYlewXfHhf-j95Cdm_4UHz0&s=10');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .item4 {
+            grid-area: item4;
+            background-color: #F5A623;
+            background-image: url('https://cdn-jk01.kabaroto.com/media/5d/06/c4/5d06c473022935de3c827077f3ffc034.jpg');
+            background-size: cover;
+        }
+    
+
+        .item5 {
+            grid-area: item5;
+            background-color: #D0021B;
+             background-image: url('https://cdn-jk01.kabaroto.com/media/5d/06/c4/5d06c473022935de3c827077f3ffc034.jpg');
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .item6 {
+            grid-area: item6;
+        }
+
+        .item7 {
+            grid-area: item7;
+        }
+
+        .item8 {
+            grid-area: item8;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+    </div>
+
+</body>
+
+</html>
